@@ -1,7 +1,7 @@
 source("loadData.R")
-par(mfrow = c(2,4))
 
 png("plot4.png", width = imgwidth, height = imgheigth)
+par(mfrow = c(2,2), mar = rep(2, 4))
 with(hpcp, {
   plot(datetime, Global_active_power, type = "l", xlab="", ylab = "Global Active Power")
   plot(datetime, Voltage, type = "l", xlab="datetime", ylab = "Voltaje")
